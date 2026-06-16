@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background-image: url('../img/naturebkgr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+/* NAVIGATION STYLING*/
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #608f5f; /* font color requirement */
+    font-weight:lighter;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* SECTION STYLING */
+
+section {
+    background: rgba(59, 59, 59, 0.6);
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* YOUTUBE STYLING */
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* DIV CONTAINERS FOR LAYOUT */
+
+.content-block {
+    background: rgba(0,0,0,0.5);
+    margin: 40px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 12px;
+}

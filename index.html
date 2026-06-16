@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Hiking Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="app.html" href="app.html">
+    <link rel="resume" href="resume.html">
+</head>
+
+<body>
+    <nav>
+        | <a style="text-decoration: none;" href="index.html">Return to Main Site</a> | 
+        <a href="app.html">Hiking Joke Generator</a> |
+        <a href="#gear">Jump to Gear</a> |
+        <a href="resume.html">See my Resume</a> |
+    </nav>
+    <header class="header">
+        <h1>My Hiking Adventures</h1>
+        <p>Exploring the mountains, one trail at a time</p>
+    </header>
+
+    <section id="favorite-hikes">
+        <h2>My Favorite Hikes</h2>
+        <p>Here are some of the hikes I've enjoyed the most:</p>
+
+        <!-- Ordered list with an unordered list inside -->
+        <ol>
+            <li>Zion National Park
+                <ul>
+                    <li>Angel’s Landing</li>
+                    <li>The Narrows</li>
+                    <li>Observation Point</li>
+                </ul>
+            </li>
+
+            <li>Moab, Utah
+                <ul>
+                    <li>Catacomb Rock</li>
+                    <li>Corona Arch</li>
+                </ul>
+            </li>
+
+            <li>Bryce Canyon National Park
+                <ul>
+                    <li>Thor's Hammer</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- Required non-Bootstrap image -->
+        <img src="img/aboutme.JPG" alt="Moab Hiking Photo" style="width: 200px; height: 300px;">
+        <img src="img/brycecanyon.JPG" alt="Bryce Canyon Hiking Photo" style="width: 200px; height: 300px;">
+        <img src="img/timp.JPG" alt="Mount Timpanogos Hiking Photo" style="width: 200px; height: 300px;">
+    </section>
+
+    <section id="gear">
+        <h2>My Hiking Gear</h2>
+        <p>These are the essentials I bring on every hike:</p>
+
+        <!-- Unordered list with an ordered list inside -->
+        <ul>
+            <li>Backpack
+                <ol>
+                    <li>Water bottle</li>
+                    <li>Snacks</li>
+                    <li>First aid kit</li>
+                </ol>
+            </li>
+
+            <li>Footwear
+                <ol>
+                    <li>Trail runners</li>
+                    <li>Cotton socks</li>
+                </ol>
+            </li>
+
+            <li>Navigation
+                <ol>
+                    <li>Map</li>
+                    <li>Compass</li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <section id="video">
+        <h2>Watch This Amazing Trail</h2>
+        <p>I love hiking here in Utah with my husband, friends and family. I have been hiking for many years and have been to many different places, but my favorite place to hike is Zion National Park. I love the views and the different trails that you can take. I also love the fact that there are so many different types of hikes, from easy to difficult. If you want to see a video of Zion's trails, check out this video.</p>
+
+        <!-- Embedded YouTube video -->
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/HnA2Be3JFOw?si=P1_2zIL0RoWpIZS8" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Tableau insert-->
+    <div class="content-block">
+    <section id="tableau">
+        <h2>Tableau Graph</h2>
+        <p>Here is a Tableau visualization that I find interesting about population and birthrate:</p>
+
+        <div class='tableauPlaceholder' id='viz1781632263172' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Population and Birth Rate (2012)' 
+                         src='https://public.tableau.com/static/images/Wo/WorldIndicatorsproject_17816319553240/Population/1_rss.png' 
+                         style='border: none' />
+                </a>
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='WorldIndicatorsproject_17816319553240/Population' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Wo/WorldIndicatorsproject_17816319553240/Population/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+                <param name='filter' value='showOnboarding=true' />
+            </object>
+        </div>
+    </section>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1781632263172');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+<footer style="text-align: center; padding: 20px; color: #cccccc; font-size: 14px;">
+    &copy; 2026 Maiya Mickelsen
+</footer>
+
+</body>
+</html>

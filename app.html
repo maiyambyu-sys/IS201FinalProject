@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiking Joke Generator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #ffffff;
+            background-image: url('./img/naturebkgr.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #608f5f;
+            font-weight: lighter;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.6);
+            width: 70%;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        #joke-box {
+            margin-top: 30px;
+            font-size: 22px;
+            min-height: 60px;
+            transition: opacity 0.4s ease;
+        }
+
+        button {
+            background-color: #608f5f;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background-color: #79a977;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+       | <a href="index.html">Return to Main Site</a> | 
+    </nav>
+
+    <div class="container">
+        <h1>Hiking Joke Generator</h1>
+        <p>Click the button to get a fresh trail‑approved joke.</p>
+
+        <button onclick="generateJoke()">Tell me a joke</button>
+
+        <div id="options" style="margin-top: 25px; display: none;">
+            <button onclick="generateJoke()">Another Joke</button>
+            <button onclick="window.location.href='index.html'">Return to Main Site</button>
+        </div>
+
+        <!-- ⭐ This was missing — now the jokes have somewhere to appear -->
+        <div id="joke-box" style="margin-top: 30px; font-size: 22px; min-height: 60px; transition: opacity 0.4s ease;"></div>
+
+    </div>
+
+    <script>
+        const jokes = [
+            "Why did the hiker bring string on the trail? In case he needed to tie up some loose ends.",
+            "I tried to tell a hiking joke… but it was over everyone’s head — too high altitude.",
+            "Why don’t mountains get cold? They wear snowcaps.",
+            "I told my friend I wanted to hike the tallest peak. He said, 'That’s a high expectation.'",
+            "Why was the backpack always stressed? Too much baggage.",
+            "I asked the trail guide if the hike was easy. He said, 'It’s a walk in the park… a very steep park.'",
+            "Why did the hiker sit on the mountain? Because it was a peak experience.",
+            "My hiking boots and I have a great relationship. We’re always taking things one step at a time."
+        ];
+
+        function generateJoke() {
+            const box = document.getElementById("joke-box");
+            const options = document.getElementById("options");
+
+            box.style.opacity = 0;
+
+            setTimeout(() => {
+                const randomIndex = Math.floor(Math.random() * jokes.length);
+                box.textContent = jokes[randomIndex];
+                box.style.opacity = 1;
+
+                options.style.display = "block";
+            }, 300);
+        }
+    </script>
+
+    <footer style="text-align: center; padding: 20px; color: #626262; font-size: 14px;">
+    &copy; 2026 Maiya Mickelsen
+    </footer>
+
+</body>
+</html>
