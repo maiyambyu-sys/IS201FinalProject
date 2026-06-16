@@ -25,9 +25,9 @@ nav {
 }
 
 nav a {
-    color: #608f5f; /* font color requirement */
+    color: #ebffe2; /* font color requirement */
     font-weight:lighter;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     font-size: 18px;
 }
@@ -60,3 +60,19 @@ iframe {
     width: 85%;
     border-radius: 12px;
 }
+
+.photo-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-row img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
